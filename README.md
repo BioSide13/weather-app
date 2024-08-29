@@ -8,4 +8,5 @@ To use the app download all the files and open the index.html file in your preff
 ## Custom Backgrounds
 If you want to add custom backgrounds just upload them to the backgrounds folder and add them in the html code. Just add the following code in the image-dropdown div: <br />
 `<img src="./backgrounds/image_name.jpg" alt="Image 5" onclick="setBackground('./backgrounds/image_name.jpg')"> ` <br />
+(Replace image_name.jpg with the name of your image and it's corresponding extension) <br />
 The above line will add your background to the background changed menu! <br />
