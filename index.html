@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <title>Weather App</title>
+    </head>
+    <body>
+        <main>
+            <section id="weather-wrapper">
+                <h1>Check The Weather In Your City!</h1>
+                <div id="weather-search">
+                    <input id="search" type="text" placeholder="Search by city">
+                    <input id="submit" type="submit" onclick="fetchWeather()" value="Search">
+                </div>
+                <div id="weather-data" style="display: none;"></div>
+            </section>
+        </main>
+        <div class="container">
+            <button class="image-picker-button" onclick="toggleDropdown()">^</button>
+            <div class="image-dropdown" id="imageDropdown">
+                <img src="./backgrounds/brook.jpeg" alt="Image 1" onclick="setBackground('./backgrounds/brook.jpeg')">
+                <img src="./backgrounds/sky.jpg" alt="Image 2" onclick="setBackground('./backgrounds/sky.jpg')">
+                <img src="./backgrounds/thunder.jpg" alt="Image 3" onclick="setBackground('./backgrounds/thunder.jpg')">
+                <img src="./backgrounds/forest.jpg" alt="Image 4" onclick="setBackground('./backgrounds/forest.jpg')">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
